@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD1E1"
+    android:backgroundTint="#FFD1E1"
+    android:foregroundTint="#FFD1E1"
+    tools:context=".CadastroActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FF0056"
+        android:outlineAmbientShadowColor="#E91E63"
+        android:outlineSpotShadowColor="#E91E63"
+        android:shadowColor="#E91E63"
+        android:textColor="#CE094C"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#E91E63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/fazerLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF7AA7"
+        android:fontFamily="sans-serif-smallcaps"
+        android:outlineAmbientShadowColor="#E91E63"
+        android:outlineSpotShadowColor="#E91E63"
+        android:shadowColor="#E91E63"
+        android:text="confirmar"
+        android:textAllCaps="false"
+        android:textColor="#CE094C"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#E91E63"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha" />
+
+    <Button
+        android:id="@+id/fazerLogin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF7AA7"
+        android:fontFamily="sans-serif-smallcaps"
+        android:outlineAmbientShadowColor="#E91E63"
+        android:outlineSpotShadowColor="#E91E63"
+        android:shadowColor="#E91E63"
+        android:text="voltar à página de login"
+        android:textAllCaps="false"
+        android:textColor="#CE094C"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#E91E63"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
